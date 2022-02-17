@@ -1,9 +1,17 @@
-const salario = 3300.0;
+// Operador Lógico dentro do Array
 
-if(salario < 2600.0) {
-    console.log("A sua aliquota é de 15%");
-    console.log("Você pode deduzir até R$ 350");}
+const idadeComprador = 17;
+const estaAcompanhado = false
+const listDestinos = new Array (
+    "Salvador", "São Paulo", "Rio de Janeiro", "Curitiba", "Orlando"
+);
 
-else if(salario < 3750.0){ 
-    console.log("A sua aliquota é de 22,5%");
-    console.log("Você pode deduzir até R$ 636");}
+console.log("Destinos possíveis:");
+console.log (listDestinos);
+
+
+if (idadeComprador >= 18 || estaAcompanhado)  {
+    console.log("Comprador maior de idade ou está acompanhado");
+listDestinos.splice(1,1);
+} else {
+    console.log ("Não é maior de idade e também não está acompanhado, procure o responsável e retorne para efetuar a compra.")}
